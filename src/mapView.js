@@ -12,6 +12,11 @@ export function createMapView(containerId) {
     }
   ).addTo(map);
 
+  L.tileLayer(
+    'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
+    { maxZoom: 18 }
+  ).addTo(map);
+
   let clickHandler = null;
   let guessMarker = null;
   let actualMarker = null;
