@@ -36,6 +36,10 @@ body {
   text-align: center;
 }
 
+#club-crest-fallback[hidden] {
+  display: none;
+}
+
 #club-name {
   font-size: 1.1rem;
   margin: 0;

@@ -19,6 +19,9 @@ export function showClubPrompt(club) {
     els.crestImg.src = club.crestUrl;
     els.crestImg.hidden = false;
     els.crestFallback.hidden = true;
+    els.crestFallback.textContent = '';
+    els.crestFallback.style.background = '';
+    els.crestFallback.style.color = '';
   } else {
     els.crestImg.hidden = true;
     els.crestFallback.hidden = false;

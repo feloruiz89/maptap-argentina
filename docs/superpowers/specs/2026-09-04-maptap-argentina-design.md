@@ -79,6 +79,12 @@ manualmente con el tiempo. Cada entrada:
   amerita).
 - Mapa: Leaflet + tiles de OpenStreetMap (gratis, sin API key, buen detalle
   en Argentina).
+
+> **Actualización post-implementación:** por pedido del usuario durante la
+> implementación, el mapa usa tiles satelitales de Esri World Imagery en vez
+> de tiles de calles de OpenStreetMap (mismo criterio: gratis, sin API key).
+> Ver `src/mapView.js`.
+
 - Sin backend. Todo el estado de la partida vive en memoria del navegador;
   el único dato persistente es el mejor puntaje en `localStorage`.
 - Hosting: sitio estático desplegable en Vercel/Netlify/GitHub Pages con

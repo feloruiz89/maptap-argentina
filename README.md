@@ -16,6 +16,9 @@ Levantar el juego en el navegador:
 
 Abrir la URL que imprime el comando (por defecto `http://localhost:8080`).
 
+El mapa usa tiles satelitales de Esri World Imagery (gratis, sin API key),
+no tiles de calles de OpenStreetMap — ver `src/mapView.js`.
+
 ## Dataset
 
 `data/clubs.json` arranca con un set chico de clubes de ejemplo (ver
