@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maptap Argentina</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header id="club-prompt">
+      <img id="club-crest" alt="" hidden />
+      <div id="club-crest-fallback" hidden></div>
+      <h1 id="club-name"></h1>
+    </header>
+
+    <div id="map"></div>
+
+    <section id="round-result" hidden>
+      <p id="result-distance"></p>
+      <p id="result-score"></p>
+      <button id="next-round-button" type="button">Siguiente ronda</button>
+    </section>
+
+    <section id="game-summary" hidden>
+      <h2>Resumen</h2>
+      <p id="summary-total"></p>
+      <p id="summary-best"></p>
+      <ol id="summary-breakdown"></ol>
+      <button id="play-again-button" type="button">Jugar de nuevo</button>
+    </section>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
