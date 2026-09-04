@@ -1,0 +1,10 @@
+{
+  "name": "maptap-argentina",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "dev": "npx --yes http-server -c-1 -p 8080"
+  }
+}
