@@ -3,9 +3,14 @@ const ARGENTINA_ZOOM = 4;
 
 export function createMapView(containerId) {
   const map = L.map(containerId).setView(ARGENTINA_CENTER, ARGENTINA_ZOOM);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors',
-  }).addTo(map);
+  L.tileLayer(
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    {
+      attribution:
+        'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community',
+      maxZoom: 18,
+    }
+  ).addTo(map);
 
   let clickHandler = null;
   let guessMarker = null;
