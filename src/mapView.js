@@ -1,5 +1,7 @@
 const ARGENTINA_CENTER = [-38.4161, -63.6167];
 const ARGENTINA_ZOOM = 4;
+const COUNTRY_BORDERS_URL =
+  'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson';
 
 export function createMapView(containerId) {
   const map = L.map(containerId).setView(ARGENTINA_CENTER, ARGENTINA_ZOOM);
@@ -12,10 +14,20 @@ export function createMapView(containerId) {
     }
   ).addTo(map);
 
-  L.tileLayer(
-    'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
-    { maxZoom: 18 }
-  ).addTo(map);
+  // Country borders only, no place-name labels (labels would give away the
+  // guess). Drawn as plain vector lines instead of a labelled reference
+  // tile layer, so there is no text to accidentally show.
+  fetch(COUNTRY_BORDERS_URL)
+    .then((response) => response.json())
+    .then((geojson) => {
+      L.geoJSON(geojson, {
+        interactive: false,
+        style: { color: '#e8e8e8', weight: 1, opacity: 0.6, fill: false },
+      }).addTo(map);
+    })
+    .catch((error) => {
+      console.warn('No se pudieron cargar los límites de países:', error);
+    });
 
   let clickHandler = null;
   let guessMarker = null;
