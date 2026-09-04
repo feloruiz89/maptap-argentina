@@ -1,0 +1,14 @@
+[
+  { "id": "boca-juniors", "name": "Club Atlético Boca Juniors", "discipline": "futbol", "lat": -34.6356, "lng": -58.3648, "crestUrl": null, "colors": ["#0b2f6b", "#f9d616"] },
+  { "id": "river-plate", "name": "Club Atlético River Plate", "discipline": "futbol", "lat": -34.5453, "lng": -58.4497, "crestUrl": null, "colors": ["#e30613", "#ffffff"] },
+  { "id": "san-lorenzo", "name": "Club Atlético San Lorenzo de Almagro", "discipline": "futbol", "lat": -34.6524, "lng": -58.4335, "crestUrl": null, "colors": ["#002a5c", "#e30613"] },
+  { "id": "racing-club", "name": "Racing Club", "discipline": "futbol", "lat": -34.6672, "lng": -58.3618, "crestUrl": null, "colors": ["#63b0e0", "#ffffff"] },
+  { "id": "independiente", "name": "Club Atlético Independiente", "discipline": "futbol", "lat": -34.6641, "lng": -58.3547, "crestUrl": null, "colors": ["#e30613", "#ffffff"] },
+  { "id": "newells-old-boys", "name": "Newell's Old Boys", "discipline": "futbol", "lat": -32.9468, "lng": -60.6660, "crestUrl": null, "colors": ["#e30613", "#000000"] },
+  { "id": "rosario-central", "name": "Rosario Central", "discipline": "futbol", "lat": -32.9270, "lng": -60.6280, "crestUrl": null, "colors": ["#0033a0", "#ffdd00"] },
+  { "id": "talleres-cordoba", "name": "Club Atlético Talleres", "discipline": "futbol", "lat": -31.3210, "lng": -64.2296, "crestUrl": null, "colors": ["#0033a0", "#ffffff"] },
+  { "id": "casi", "name": "Club Atlético San Isidro (CASI)", "discipline": "rugby", "lat": -34.4708, "lng": -58.5192, "crestUrl": null, "colors": ["#000000", "#ffffff"] },
+  { "id": "sic", "name": "San Isidro Club (SIC)", "discipline": "rugby", "lat": -34.4600, "lng": -58.5300, "crestUrl": null, "colors": ["#e30613", "#ffffff"] },
+  { "id": "hindu-club", "name": "Hindú Club", "discipline": "rugby", "lat": -34.4900, "lng": -58.6300, "crestUrl": null, "colors": ["#4b2e83", "#ffffff"] },
+  { "id": "newman", "name": "Club Newman", "discipline": "rugby", "lat": -34.4100, "lng": -58.7100, "crestUrl": null, "colors": ["#0033a0", "#ffffff"] }
+]
