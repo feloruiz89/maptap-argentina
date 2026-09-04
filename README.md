@@ -22,8 +22,10 @@ no tiles de calles de OpenStreetMap — ver `src/mapView.js`.
 ## Dataset
 
 `data/clubs.json` arranca con un set chico de clubes de ejemplo (ver
-`docs/superpowers/specs/2026-09-04-maptap-argentina-design.md`). Las
-coordenadas son un punto de partida a verificar, no datos GPS confirmados,
-y ningún club trae `crestUrl` todavía — todos usan el fallback de texto y
-colores. Sumar clubes y escudos reales (Wikimedia Commons) es trabajo manual
-y continuo, club por club.
+`docs/superpowers/specs/2026-09-04-maptap-argentina-design.md`). 11 de los
+12 clubes tienen `crestUrl` real (Wikimedia Commons, verificado que cada
+imagen carga) y coordenadas cruzadas contra Wikipedia/Nominatim; Club
+Newman no tiene un escudo con licencia clara en Commons, así que se queda
+con el fallback de texto y colores a propósito. Ampliar el dataset hacia
+los 40-60 clubes del spec sigue siendo trabajo manual y continuo, club por
+club.
