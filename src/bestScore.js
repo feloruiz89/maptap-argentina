@@ -1,4 +1,7 @@
-const STORAGE_KEY = 'maptap-argentina-best-score';
+// v2: bumped when the scoring scale changed from a 5000-max to a 100-max
+// per round, so old best scores from the previous scale don't leak in as
+// an impossible-to-beat number.
+const STORAGE_KEY = 'maptap-argentina-best-score-v2';
 
 export function getBestScore(storage) {
   const raw = storage.getItem(STORAGE_KEY);

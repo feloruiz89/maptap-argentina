@@ -18,7 +18,7 @@ test('submitGuess scores an exact guess at maximum and advances the round', () =
   const game = createGame(clubs, { roundCount: 1, rng: () => 0 });
   const club = game.currentClub();
   const result = game.submitGuess({ lat: club.lat, lng: club.lng });
-  assert.equal(result.score, 5000);
+  assert.equal(result.score, 100);
   assert.equal(result.distanceKm, 0);
   assert.ok(game.isOver());
 });
@@ -30,7 +30,7 @@ test('getTotalScore sums all round scores and getResults returns them in order',
   const secondClub = game.currentClub();
   game.submitGuess({ lat: secondClub.lat, lng: secondClub.lng });
   assert.ok(game.isOver());
-  assert.equal(game.getTotalScore(), 10000);
+  assert.equal(game.getTotalScore(), 200);
   assert.equal(game.getResults().length, 2);
 });
 

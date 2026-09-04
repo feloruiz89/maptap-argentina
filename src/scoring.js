@@ -1,4 +1,4 @@
-const MAX_SCORE = 5000;
+const MAX_SCORE = 100;
 const DECAY_KM = 30;
 
 export function scoreForDistance(distanceKm) {
