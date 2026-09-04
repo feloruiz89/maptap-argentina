@@ -43,6 +43,13 @@ body {
 #club-name {
   font-size: 1.1rem;
   margin: 0;
+  flex: 1;
+}
+
+#running-score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 #map {
@@ -59,4 +66,15 @@ button {
   font-size: 1rem;
   padding: 8px 16px;
   cursor: pointer;
+}
+
+#whatsapp-share {
+  display: inline-block;
+  margin: 8px 8px 8px 0;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #25d366;
+  color: #0b1a12;
+  font-weight: bold;
+  text-decoration: none;
 }

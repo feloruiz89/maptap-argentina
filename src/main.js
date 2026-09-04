@@ -3,6 +3,7 @@ import { createMapView } from './mapView.js';
 import { saveBestScoreIfHigher } from './bestScore.js';
 import {
   showClubPrompt,
+  updateRunningScore,
   showRoundResult,
   hideRoundResult,
   showGameSummary,
@@ -29,6 +30,7 @@ function presentRound(game, mapView) {
     const result = game.submitGuess(latlng);
     mapView.showGuess(latlng);
     mapView.showResult(latlng, { lat: club.lat, lng: club.lng });
+    updateRunningScore(game.getTotalScore());
 
     if (game.isOver()) {
       const bestScore = saveBestScoreIfHigher(localStorage, game.getTotalScore());
@@ -46,6 +48,7 @@ function presentRound(game, mapView) {
 
 function startNewGame(clubs, mapView) {
   hideGameSummary();
+  updateRunningScore(0);
   const game = createGame(clubs, { roundCount: ROUND_COUNT });
   presentRound(game, mapView);
 }
